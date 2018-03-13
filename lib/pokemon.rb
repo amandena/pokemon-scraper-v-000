@@ -15,7 +15,7 @@ class Pokemon
     pokemon = db.execute("SELECT pokemon.name FROM pokemon WHERE pokemon.id = id")
     
     pikachu = pokemon[0][0].save(name, type, db)
-    pikachu
     binding.pry
+    pikachu
   end
 end
