@@ -13,7 +13,7 @@ class Pokemon
   
   def self.find(id, db)
     pokemon = db.execute("SELECT pokemon.name FROM pokemon WHERE pokemon.id = id")
-    pokemon.save(name, db)
+    pokemon.save(name, type, db)
     pokemon
   end
 end
